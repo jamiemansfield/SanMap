@@ -1,0 +1,72 @@
+[
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [757, 273]
+        },
+        "properties": {
+            "name": "Los Santos Tower"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [695.9, 160.6]
+        },
+        "properties": {
+            "name": "Observatory"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [956, 207]
+        },
+        "properties": {
+            "name": "Los Santos Forum"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [776, 118]
+        },
+        "properties": {
+            "name": "Los Santos International Airport"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [834, 669]
+        },
+        "properties": {
+            "name": "The Four Dragons Casino"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [887, 714]
+        },
+        "properties": {
+            "name": "The Camel's Toe"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [819, 771]
+        },
+        "properties": {
+            "name": "Pirates In Men's Pants"
+        }
+    }
+]

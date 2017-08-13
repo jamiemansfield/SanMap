@@ -1,0 +1,312 @@
+[
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [915, 217]
+        },
+        "properties": {
+            "name": "Johnson House"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [913, 167]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [781, 150]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [852, 287]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [649, 226]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [553, 205]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [724, 394]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [632, 416]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [535, 481]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [872, 528]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [154, 114]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [262, 243]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [160, 526]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [92, 477]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [130, 619]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [50, 637]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [94, 558]
+        },
+        "properties": {
+            "name": "Hotel Suite"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [150, 650]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [244, 943]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [325, 759]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [439, 695]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [569, 923]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [655, 835]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [827, 771]
+        },
+        "properties": {
+            "name": "Hotel Suite"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [873, 714]
+        },
+        "properties": {
+            "name": "Hotel Suite"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [869, 806]
+        },
+        "properties": {
+            "name": "Hotel Suite"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [898, 862]
+        },
+        "properties": {
+            "name": "Hotel Suite"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [908, 615]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [970, 856]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [711, 922]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [734, 816]
+        },
+        "properties": {
+            "name": "Safehouse"
+        }
+    }
+]
