@@ -3,60 +3,60 @@
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [757, 273]
+            "coordinates": [900, 215]
         },
         "properties": {
-            "name": "Los Santos Tower"
+            "name": "Denise Robinson"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [695.9, 160.6]
+            "coordinates": [840, 953]
         },
         "properties": {
-            "name": "Observatory"
+            "name": "Millie Perkins"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [956, 207]
+            "coordinates": [436, 261]
         },
         "properties": {
-            "name": "Los Santos Forum"
+            "name": "Helena Wankstein"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [834, 669]
+            "coordinates": [72, 691]
         },
         "properties": {
-            "name": "The Four Dragons Casino"
+            "name": "Katie Zhan"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [887, 714]
+            "coordinates": [199, 701]
         },
         "properties": {
-            "name": "The Camel's Toe"
+            "name": "Michelle Cannes"
         }
     },
     {
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [819, 771]
+            "coordinates": [266, 939]
         },
         "properties": {
-            "name": "Pirates In Men's Pants"
+            "name": "Barbara Schternvart"
         }
     }
 ]

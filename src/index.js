@@ -7,10 +7,16 @@ import AerialMap from './img/maps/aerial.jpg';
 
 import HomeIcon from './img/icons/home.png';
 import BuildingIcon from './img/icons/building.png';
+import AirportIcon from './img/icons/airport.png';
+import SchoolIcon from './img/icons/school.png';
+import GirlfriendIcon from './img/icons/girlfriend.png';
 
 // GeoJSON
 import Homes from './geo/homes.json';
 import Buildings from './geo/buildings.json';
+import Airports from './geo/airports.json';
+import Schools from './geo/schools.json';
+import Girlfriends from './geo/girlfriends.json';
 
 // JS Dependencies
 import L from 'leaflet';
@@ -27,13 +33,13 @@ let mapBounds = [[0, 0], [1000, 1000]];
 
 // Map types
 let lineLayer = L.imageOverlay(LineMap, mapBounds, {
-    attribution: 'Map data (c) <a href="http://www.rockstargames.com/">Rockstar Games</a>, ' +
-    'Imagery (c) <a href="https://mapicons.mapsmarker.com/">Map Icons Collection</a>, ' +
+    attribution: 'Map Imagery (c) <a href="http://www.rockstargames.com/">Rockstar Games</a>, ' +
+    'Icon Imagery (c) <a href="https://mapicons.mapsmarker.com/">Map Icons Collection</a>, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>'
 });
 let aerialLayer = L.imageOverlay(AerialMap, mapBounds, {
-    attribution: 'Map data (c) <a href="http://ian-albert.com/">Ian Albert</a>, ' +
-    'Imagery (c) <a href="https://mapicons.mapsmarker.com/">Map Icons Collection</a>, ' +
+    attribution: 'Map Imagery (c) <a href="http://ian-albert.com/">Ian Albert</a>, ' +
+    'Icon Imagery (c) <a href="https://mapicons.mapsmarker.com/">Map Icons Collection</a>, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>'
 });
 
@@ -52,6 +58,15 @@ let homeIcon = new BaseIcon({
 let buildingIcon = new BaseIcon({
     iconUrl: BuildingIcon
 });
+let airportIcon = new BaseIcon({
+    iconUrl: AirportIcon
+});
+let schoolIcon = new BaseIcon({
+    iconUrl: SchoolIcon
+});
+let girlfriendIcon = new BaseIcon({
+    iconUrl: GirlfriendIcon
+});
 
 // GeoJsons
 let homes = L.geoJSON(Homes, {
@@ -65,6 +80,30 @@ let buildings = L.geoJSON(Buildings, {
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
             icon: buildingIcon
+        }).bindPopup(feature.properties.name);
+    }
+});
+let airports = L.geoJSON(Airports, {
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: airportIcon
+        }).bindPopup(feature.properties.name);
+    },
+    style: {
+        color: '#9d7050'
+    }
+});
+let schools = L.geoJSON(Schools, {
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: schoolIcon
+        }).bindPopup(feature.properties.name);
+    }
+});
+let girlfriends = L.geoJSON(Girlfriends, {
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: girlfriendIcon
         }).bindPopup(feature.properties.name);
     }
 });
@@ -82,7 +121,10 @@ let layers = {
 };
 let overlays = {
     Homes: homes,
-    Buildings: buildings
+    Buildings: buildings,
+    Airports: airports,
+    Schools: schools,
+    Girlfriends: girlfriends
 };
 
 L.control.layers(layers, overlays).addTo(map);

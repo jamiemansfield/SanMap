@@ -123,7 +123,7 @@
         "type": "Feature",
         "geometry": {
             "type": "Point",
-            "coordinates": [160, 526]
+            "coordinates": [162, 493]
         },
         "properties": {
             "name": "Safehouse"
@@ -186,7 +186,7 @@
             "coordinates": [244, 943]
         },
         "properties": {
-            "name": "Safehouse"
+            "name": "Abandoned AC Tower"
         }
     },
     {

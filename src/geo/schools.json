@@ -1,0 +1,42 @@
+[
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [565, 922]
+        },
+        "properties": {
+            "name": "Flight School"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [694, 725]
+        },
+        "properties": {
+            "name": "Biking School"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [135, 903]
+        },
+        "properties": {
+            "name": "Boating School"
+        }
+    },
+    {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [162, 482]
+        },
+        "properties": {
+            "name": "Driving School"
+        }
+    }
+]
