@@ -1,12 +1,11 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const extractCss = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
-    disable: process.env.NODE_ENV === "development"
+    filename: '[name].css'
 });
 
 module.exports = {
@@ -17,9 +16,9 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(['dist']),
         extractCss,
-        new HtmlWebpackPlugin({
-            title: 'San Andreas Interactive Map'
-        }),
+        new CopyWebpackPlugin([
+            { from: 'public' }
+        ]),
         new CnameWebpackPlugin({
             domain: 'sanmap.jamiemansfield.me',
         })

@@ -23,11 +23,6 @@ import L from 'leaflet';
 
 // ---
 
-// Create #map for Leaflet
-let appElement = document.createElement('div');
-appElement.id = 'map';
-document.body.appendChild(appElement);
-
 // Create Leaflet map
 let mapBounds = [[0, 0], [1000, 1000]];
 
@@ -110,6 +105,8 @@ let girlfriends = L.geoJSON(Girlfriends, {
 
 let map = L.map('map', {
     crs: L.CRS.Simple,
+    minZoom: 0,
+    maxZoom: 5,
     // The default layers that will be enabled when SanMap is launched
     layers: [aerialLayer, homes]
 });
