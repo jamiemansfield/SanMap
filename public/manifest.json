@@ -1,0 +1,16 @@
+{
+    "short-name": "SanMap",
+    "name": "San Andreas Interactive Map",
+    "start_url": "/?utm_source=homescreen",
+    "icons": [
+        {
+            "src": "https://avatars0.githubusercontent.com/u/5103549",
+            "type": "image/png",
+            "sizes": "460x460"
+        }
+    ],
+    "background_color": "#FAFAFA",
+    "theme_color": "#E0E0E0",
+    "display": "standalone",
+    "orientation": "portrait"
+}

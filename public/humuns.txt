@@ -1,0 +1,15 @@
+/* TEAM */
+    Developer: Jamie Mansfield
+    Contact: dev [at] jamierocks.uk
+    Twitter: @jamiethecoder
+    From: England, United Kingdom
+
+/* THANKS */
+    Aerial Imagery Author: Ian Albert
+    Twitter: ianalbertshow
+    From: Boston, Massachusetts, United Shates
+
+/* SITE */
+    Language: British English
+    Doctype: HTML5
+    IDE: IntelliJ Idea, Visual Studio Code
