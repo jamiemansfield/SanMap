@@ -2,9 +2,6 @@
 import './style.scss';
 
 // Images
-import LineMap from './img/maps/line.png';
-import AerialMap from './img/maps/aerial.jpg';
-
 import HomeIcon from './img/icons/home.png';
 import BuildingIcon from './img/icons/building.png';
 import AirportIcon from './img/icons/airport.png';
@@ -23,105 +20,35 @@ import L from 'leaflet';
 
 // ---
 
-// Create Leaflet map
-let mapBounds = [[0, 0], [1000, 1000]];
-
-// Map types
-let lineLayer = L.imageOverlay(LineMap, mapBounds, {
+let lineLayer = L.tileLayer('/img/maps/line/{z}/{y}/{x}.jpg', {
     attribution: 'Map Imagery (c) <a href="http://www.rockstargames.com/">Rockstar Games</a>, ' +
     'Icon Imagery (c) <a href="https://mapicons.mapsmarker.com/">Map Icons Collection</a>, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>'
 });
-let aerialLayer = L.imageOverlay(AerialMap, mapBounds, {
+
+let aerialLayer = L.tileLayer('/img/maps/aerial/{z}/{y}/{x}.jpg', {
     attribution: 'Map Imagery (c) <a href="http://ian-albert.com/">Ian Albert</a>, ' +
     'Icon Imagery (c) <a href="https://mapicons.mapsmarker.com/">Map Icons Collection</a>, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>'
 });
 
-// Icons
-let BaseIcon = L.Icon.extend({
-    options: {
-        iconSize:    [32, 37],
-        iconAnchor:  [16, 37],
-        popupAnchor: [0, -34]
-    }
-});
-
-let homeIcon = new BaseIcon({
-    iconUrl: HomeIcon
-});
-let buildingIcon = new BaseIcon({
-    iconUrl: BuildingIcon
-});
-let airportIcon = new BaseIcon({
-    iconUrl: AirportIcon
-});
-let schoolIcon = new BaseIcon({
-    iconUrl: SchoolIcon
-});
-let girlfriendIcon = new BaseIcon({
-    iconUrl: GirlfriendIcon
-});
-
-// GeoJsons
-let homes = L.geoJSON(Homes, {
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-            icon: homeIcon
-        }).bindPopup(feature.properties.name);
-    }
-});
-let buildings = L.geoJSON(Buildings, {
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-            icon: buildingIcon
-        }).bindPopup(feature.properties.name);
-    }
-});
-let airports = L.geoJSON(Airports, {
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-            icon: airportIcon
-        }).bindPopup(feature.properties.name);
-    },
-    style: {
-        color: '#9d7050'
-    }
-});
-let schools = L.geoJSON(Schools, {
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-            icon: schoolIcon
-        }).bindPopup(feature.properties.name);
-    }
-});
-let girlfriends = L.geoJSON(Girlfriends, {
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-            icon: girlfriendIcon
-        }).bindPopup(feature.properties.name);
-    }
-});
-
+// Create Leaflet map
 let map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: 0,
+    minZoom: 1,
     maxZoom: 5,
+    zoomSnap: 0.5,
     // The default layers that will be enabled when SanMap is launched
-    layers: [aerialLayer, homes]
+    layers: [aerialLayer]
 });
-map.fitBounds(mapBounds);
+map.setView([-128, 128], 1);
+map.setMaxBounds([[0, 256], [-256, 0]]);
 
 let layers = {
     Line: lineLayer,
     Aerial: aerialLayer
 };
 let overlays = {
-    Homes: homes,
-    Buildings: buildings,
-    Airports: airports,
-    Schools: schools,
-    Girlfriends: girlfriends
 };
 
 L.control.layers(layers, overlays).addTo(map);
@@ -138,4 +65,4 @@ function onMapClick(e) {
 }
 
 // Remember to comment this when committing!
-//map.on('click', onMapClick);
+map.on('click', onMapClick);
